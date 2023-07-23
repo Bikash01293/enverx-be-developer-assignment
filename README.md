@@ -16,7 +16,7 @@
    
 ![Screenshot from 2023-07-23 18-03-33](https://github.com/Bikash01293/enverx-be-developer-assignment/assets/48493235/5aba8fcd-bb59-4ba1-a344-ea4f6edff0f4)
 
-4. Fetching post by its id.
+4. Fetching post by its id
 
 ![Screenshot from 2023-07-23 18-04-02](https://github.com/Bikash01293/enverx-be-developer-assignment/assets/48493235/555f0cae-be4c-42a1-92b3-3d90284bf5a0)
 
