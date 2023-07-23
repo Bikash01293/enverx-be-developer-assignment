@@ -1,23 +1,13 @@
 const express = require('express');
 const bodyParser = require('body-parser');
-const mongoose = require('mongoose');
+const Database = require('./src/db/db');
 const postRoutes = require('./src/routes/postRoutes');
 const errorHandler = require('./src/middleware/errorHandlers');
 
 const app = express();
 
-//Connect to MongoDB
-mongoose
-  .connect('mongodb://localhost:27017/blog', {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  })
-  .then(() => {
-    console.log('MongoDB connected successfully');
-  })
-  .catch((err) => {
-    console.error('Error connecting to MongoDB:', err.message);
-  });
+//Db connection
+Database()
 
 //Middleware
 app.use(bodyParser.json());
